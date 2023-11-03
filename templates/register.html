@@ -1,0 +1,20 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Registration</title>
+</head>
+<body>
+    <h1>Register</h1>
+    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet">
+    <form method="POST">
+        <label for="username">Username:</label>
+        <input type="text" name="username" required><br><br>
+        <label for="password">Password:</label>
+        <input type="password" name="password" required><br><br>
+        <label for="voice_data">Voice Data:</label>
+        <input type="text" name="voice_data" required><br><br>
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>
